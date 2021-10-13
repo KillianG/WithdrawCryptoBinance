@@ -4,7 +4,6 @@ from binance.exceptions import BinanceAPIException
 
 client = Client(BINANCE_API_KEY, BINANCE_API_SECRET)
 
-
 def withdraw_btc():
     try:
         btc_amount_available = client.get_asset_balance(asset='BTC')['free']
